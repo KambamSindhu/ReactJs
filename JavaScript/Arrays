@@ -1,0 +1,63 @@
+
+======================
+ARRAYS IN JS
+=========================
+var data=[10,20,30,40,50,"hi","hello"];
+
+//size or length of array
+var size=data.length;
+console.log(size);
+
+//accessing a specific element from the array
+var ele = data[3];
+console.log(ele);
+
+==================
+Predefined functions
+=====================
+1)push:add at the last
+data.push("hi");
+data.push(100);
+console.log(data);
+
+2)unShift: add at last
+data.unshift("kabir");
+data.unshift(true,23,"bye");
+console.log(data);
+
+3)pop: remove last element 
+data.pop();
+console.log(data);
+
+4)shift: remove first element
+data.shift();
+console.log(data);
+
+var data=[10,20,30,40,50];
+5) includes
+var ele=data.includes(30);
+console.log(ele);
+
+6)indexOf
+var idx=data.indexOf(20);
+console.log(idx);
+
+7) forEach
+var data=[10,20,30,40,50];
+
+data.forEach(function(element,index){
+    console.log(element,index)
+});
+
+8) Map
+var data=[10,20,30,40,50];
+
+var newArray=data.map(function(element,index){
+    var result=element*100;
+    return result;
+});
+
+console.log(newArray);
+
+
+
