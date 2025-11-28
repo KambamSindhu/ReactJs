@@ -1,0 +1,42 @@
+
+FOR LOOP
+=========
+-------------
+for
+--------------
+for(var x=1 ; x<=10 ; x++){
+    console.log(x);
+}
+
+console.log("=========================");
+
+for(var x=80;x>=60;x--)
+{
+    if(x%2==0)
+    {
+      console.log(x);  
+    }
+}
+-------------
+for-in
+--------------
+var obj={
+    name:"rohan",
+    age:23,
+    gender:"male",
+    city:"pune",
+}
+
+for(var key in obj)
+{
+    console.log(key+" : "+obj[key]);
+    
+}
+-------------
+for-of
+--------------
+
+var data=[10,20,30,40,50];
+for(var ele of data ){
+    console.log(ele);
+}
